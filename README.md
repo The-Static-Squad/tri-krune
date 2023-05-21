@@ -1,1 +1,1 @@
-# Tri-krune
+# tri-krune
