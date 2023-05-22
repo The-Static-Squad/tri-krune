@@ -1,12 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Product</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div class="header">
+        <!-- top header (logo i navigaciju) ucitati dimanicki -->
+      <h1 class="header-title">Prodavnica</h1>
+      <div class="sitemap">
+        <span>
+          <!-- dinamicki ispis putanje do proizvoda
+                    uraditi u javascript
+                -->
+        </span>
+      </div>
+    </div>
+
+    <div class="product-container">
+      <div class="product-images-container">
+        <div class="product-main-image">
+          <img src="" alt="" />
+        </div>
+        <div class="dots">
+          <span class="dot" class="active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <div class="product-images">
+          <img src="" alt="" />
+          <img src="" alt="" />
+          <img src="" alt="" />
+        </div>
+      </div>
+
+      <div class="product-info-container">
+        <h2 class="product-title">Naziv proizvoda</h2>
+        <p class="product-price">2,000.00 - 2,499.00</p>
+        <p class="product-info">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni quod
+          cupiditate sit eligendi praesentium ut, molestiae fuga harum commodi
+          blanditiis aspernatur adipisci sapiente doloribus, quibusdam autem.
+        </p>
+        <p class="product-info">
+          Magni quod cupiditate sit eligendi praesentium ut, molestiae fuga
+          harum commodi blanditiis aspernatur adipisci sapiente doloribus,
+          quibusdam autem. Explicabo impedit esse rerum!
+        </p>
+        <div class="product-form">
+          <div class="product-form__color">
+            <label for="color">Boja</label>
+            <select name="color" id="color">
+              <option value="black">Crna</option>
+              <option value="brown">Braon</option>
+              <option value="white">Bela</option>
+            </select>
+          </div>
+          <div class="product-form__text">
+            <label for="form-text">Podaci za graviranje<span>*</span></label>
+            <input
+              type="text"
+              name="form-text"
+              placeholder="Unesite zeljene podatke za graviranje..."
+            />
+          </div>
+          <div class="product-form-quantity">
+            <label for="quntity">Količina</label>
+            <input type="button" value="-" />
+            <span id="quantityValue">1</span>
+            <input type="button" value="+" />
+          </div>
+          <button class="form-button" type="button">Dodaj u korpu</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="other-products-section">
+      <h2 class="header-title">Možda će vam se svideti</h2>
+      <div class="product-slider-container">
+        <div class="product-slider-card">
+          <img src="" alt="" />
+          <h3 class="product-title">Lorem ipsum</h3>
+          <p class="product-price">2,199.00</p>
+          <div class="product-card-btns">
+            <div class="product-card-btn">
+              <a href="" class="product-search-btn"
+                ><i class="fa-solid fa-magnifying-glass"></i
+              ></a>
+              <a href="" class="product-cart-btn"
+                ><i class="fa-solid fa-cart-shopping"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="product-slider-card">
+          <img src="" alt="" />
+          <h3 class="product-title">Lorem ipsum</h3>
+          <p class="product-price">2,199.00</p>
+          <div class="product-card-btns">
+            <div class="product-card-btn">
+              <a href="" class="product-search-btn"
+                ><i class="fa-solid fa-magnifying-glass"></i
+              ></a>
+              <a href="" class="product-cart-btn"
+                ><i class="fa-solid fa-cart-shopping"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="product-slider-card">
+          <img src="" alt="" />
+          <h3 class="product-title">Lorem ipsum</h3>
+          <p class="product-price">2,199.00</p>
+          <div class="product-card-btns">
+            <div class="product-card-btn">
+              <a href="" class="product-search-btn"
+                ><i class="fa-solid fa-magnifying-glass"></i
+              ></a>
+              <a href="" class="product-cart-btn"
+                ><i class="fa-solid fa-cart-shopping"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="product-slider-card">
+          <img src="" alt="" />
+          <h3 class="product-title">Lorem ipsum</h3>
+          <p class="product-price">2,199.00</p>
+          <div class="product-card-btns">
+            <div class="product-card-btn">
+              <a href="" class="product-search-btn"
+                ><i class="fa-solid fa-magnifying-glass"></i
+              ></a>
+              <a href="" class="product-cart-btn"
+                ><i class="fa-solid fa-cart-shopping"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="dots">
+          <span class="dot" class="active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+        <!-- Dinamicki ubaciti footer -->
+    </footer>
+  </body>
 </html>
