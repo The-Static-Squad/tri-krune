@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./cart.css" />
+    <title>Korpa</title>
+  </head>
+  <body>
+    <div class="header">
+      <!-- top header (logo i navigaciju) ucitati dimanicki -->
+      <h1 class="header-title">Korpa</h1>
+      <div class="sitemap">
+        <span>
+          <!-- dinamicki ispis putanje do proizvoda
+                    uraditi u javascript
+                -->
+        </span>
+      </div>
+    </div>
+
+    <main class="cart-container">
+      <div class="products-container">
+        <article class="product-card">
+          <img
+            class="product-img"
+            src="../img/cart/IMG_20221221_103532.jpg"
+            width="200"
+          />
+          <div class="product-info">
+            <h2 class="product-name">Naziv proizvoda</h2>
+            <div class="flex-personalization item-color">
+              <p>Boja</p>
+              <p>Plava</p>
+            </div>
+            <div class="flex-personalization custom-info">
+              <p>Podaci za graviranje</p>
+              <p>Porodica lorem ipsum</p>
+            </div>
+            <p class="item-price">2.499.00 rsd</p>
+          </div>
+          <div class="close-add-flex">
+            <i class="fa-solid fa-xmark"></i>
+            <div class="quantity-wrapper">
+              <select name="item-quantity" id="item-quantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+          </div>
+        </article>
+        <article class="product-card">
+          <img
+            class="product-img"
+            src="../img/cart/IMG_20221121_182446_609.jpg"
+            width="200"
+          />
+          <div class="product-info">
+            <h2 class="product-name">Naziv proizvoda</h2>
+            <div class="flex-personalization custom-info">
+              <p>Podaci za graviranje</p>
+              <p>Porodica lorem ipsum</p>
+            </div>
+            <p class="item-price">2.499.00 rsd</p>
+          </div>
+          <div class="close-add-flex">
+            <i class="fa-solid fa-xmark"></i>
+            <div class="quantity-wrapper">
+              <select name="item-quantity" id="item-quantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+          </div>
+        </article>
+        <article class="product-card">
+          <img
+            class="product-img"
+            src="../img/cart/IMG_20221220_151233.jpg"
+            width="200"
+          />
+          <div class="product-info">
+            <h2 class="product-name">Naziv proizvoda</h2>
+            <div class="flex-personalization item-color">
+              <p>Boja</p>
+              <p>Braon</p>
+            </div>
+            <div class="flex-personalization custom-info">
+              <p>Podaci za graviranje</p>
+              <p>lorem ipsum dolor sit</p>
+            </div>
+            <p class="item-price">2.499.00 rsd</p>
+          </div>
+          <div class="close-add-flex">
+            <i class="fa-solid fa-xmark"></i>
+            <div class="quantity-wrapper">
+              <select name="item-quantity" id="item-quantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+          </div>
+        </article>
+      </div>
+      <aside class="summary-container">
+        <div>
+          <p>Vrednost proizvoda</p>
+          <div class="summary-items">
+            <p>Vrednost proizvoda</p>
+            <p>7.497.00 rsd</p>
+          </div>
+          <div class="summary-items shipping">
+            <p>Troskovi dostave</p>
+            <p>300.00 rsd</p>
+          </div>
+          <div class="summary-items">
+            <p>Iznos racuna</p>
+            <p>7.497.00 rsd</p>
+          </div>
+          <div class="summary-items">
+            <div>
+              <p>Iznos za placanje</p>
+              <p class="shipping"></p>
+            </div>
+            <p class="price-total">7.497.00 rsd</p>
+          </div>
+          <div class="order-button">Naruci</div>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <!-- Dinamicki ubaciti footer -->
+    </footer>
+  </body>
+</html>
