@@ -1,0 +1,78 @@
+{
+	"products": [
+		{
+			"title": "Lorem",
+			"price": 1000,
+			"discount_price": 800,
+			"image": "./database/tri-krune-slike-1440px/IMG_20221103_004426_041.jpg"
+
+		},
+		{
+			"title": "Lorem",
+			"price": 1000,
+			"discount_price": 700,
+			"image": "./database/tri-krune-slike-1440px/IMG_20221103_004426_150.jpg"
+		},
+		{
+			"title": "prod 3",
+			"price": 1000,
+			"discount_price": 1000,
+			"image": "./database/tri-krune-slike-1440px/IMG_20221106_144312.jpg"
+		},
+		{
+			"title": "prod 4",
+			"price": 1000,
+			"discount_price": 1000,
+			"image": "./database/tri-krune-slike-1440px/IMG_20221109_093251.jpg"
+		},
+		{
+			"title": "prod 5",
+			"price": 1000,
+			"discount_price": 750,
+			"image": "./database/tri-krune-slike-1440px/IMG_20221109_091737.jpg"
+		},
+		{
+			"title": "prod 6",
+			"price": 1000,
+			"discount_price": 1000,
+			"image": "./database/tri-krune-slike-1440px/IMG_20221109_093304.jpg"
+		},
+		{
+			"title": "prod 7",
+			"price": 1000,
+			"discount_price": 1000,
+			"image": "./database/tri-krune-slike-1440px/IMG_20221121_182446_303.jpg"
+		},
+		{
+			"title": "Lorem",
+			"price": 1000,
+			"discount_price": 800,
+			"image": "./database/tri-krune-slike-1440px/IMG_20221121_182446_609.jpg"
+		},
+		{
+			"title": "Ipsum",
+			"price": 1000,
+			"discount_price": 700,
+			"image": "./database/tri-krune-slike-1440px/IMG_20221121_182446_637.jpg"
+		},
+		{
+			"title": "prod 77",
+			"price": 1000,
+			"discount_price": 1000,
+			"image": "./database/tri-krune-slike-1440px/IMG_20221122_235729_600.jpg"
+		},
+		{
+			"title": "Longer title that breaks to two rows",
+			"price": 1000,
+			"discount_price": 800,
+			"image": "./database/tri-krune-slike-1440px/IMG_20221124_230401.jpg"
+		},
+		{
+			"title": "Very, very. very long title that takes three rows",
+			"price": 1600,
+			"discount_price": 1250,
+			"image": "./database/tri-krune-slike-1440px/IMG_20221124_230536.jpg"
+		}
+
+	]
+}
