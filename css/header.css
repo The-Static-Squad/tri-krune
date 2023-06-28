@@ -1,0 +1,30 @@
+#top-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    margin-top: 20px;
+}
+
+.nav-logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 1px solid pink
+}
+
+.nav-bar ul{
+    display: flex;
+}
+
+.nav-bar ul li {
+    list-style-type: none;
+    & > a {
+        text-decoration: none;
+        padding: 0 10px;
+    }
+}
+
+.nav-icons-container {
+    display: flex;
+    gap: 20px
+}
