@@ -1,0 +1,158 @@
+@font-face {
+	font-family: IngridDarling;
+	src: url('../fonts/IngridDarling-Regular.ttf');
+}
+
+@font-face {
+	font-family: Vidaloka;
+	src: url('../fonts/Vidaloka-Regular.ttf');
+}
+
+:root {
+	--padding: 60px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	border: none;
+}
+
+#gifts, .main-title {
+	margin: var(--padding);
+	width: calc(100% - (2 * var(--padding)));
+}
+
+h1 {
+	font-size: 96px;
+	font-weight: 400;
+	font-family: 'IngridDarling';
+	text-align: left;
+	/* line-height: 90px; */
+}
+
+h2 {
+	font-size: 68px;
+	font-weight: 400;
+	font-family: 'IngridDarling';
+	text-align: center;
+	line-height: 90px;
+}
+
+p {
+	font-size: 24px;
+	font-weight: 400;
+	font-family: 'Vidaloka', 'Times New Roman', Times, serif;
+	text-align: center;
+	line-height: 30px;
+}
+
+#showcase {
+	margin: 60px 0;
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 50px;
+	grid-template-rows: repeat(2, 1fr);
+}
+
+#showcase .product {
+	width: 100%;
+	position: relative;
+	display: grid;
+	grid-template-rows: auto 1fr;
+}
+
+.product .data {
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+}
+
+.product .image {
+	width: 100%;
+	object-fit: cover;
+	aspect-ratio: 1/1;
+}
+
+.product h3 {
+	font-size: 50px;
+	font-weight: 400;
+	font-family: 'IngridDarling';
+	text-align: center;
+}
+
+div.price {
+	display: flex;
+	flex-flow: row wrap;
+	align-content: center;
+	justify-content: center;
+	gap: 10px;
+}
+
+.price h4 {
+	font-size: 22px;
+	font-weight: 400;
+	font-family: 'Vidaloka', 'Times New Roman', Times, serif;
+	text-align: center;
+	color: #665E5E;
+}
+
+.price h4.previous-price {
+	text-decoration: 1.5px line-through;
+	color: #a99999;
+}
+
+.product button, .main-title button {
+	padding: 10px 20px;
+	background-color: #f9085fb8;
+	color: white;
+	font-size: 20px;
+	font-family: 'Vidaloka', 'Times New Roman', Times, serif;
+	border-radius: 20px;
+	margin-top: 15px;
+	justify-self: center;
+}
+
+.product .label {
+	position: absolute;
+	right: -30px;
+	top: -40px;
+	padding: 30px 20px;
+	border-radius: 50%;
+	background-color: #F9085F;
+	color: white;
+	font-family: 'Vidaloka', 'Times New Roman', Times, serif;
+	font-size: 20px;
+}
+
+@media screen and (max-width: 992px) {
+	#showcase {
+		grid-template-columns: repeat(3, 1fr);
+		column-gap: 40px;
+		grid-template-rows: repeat(3, 1fr);
+	}
+
+	.product .label {
+		top: -30px;
+		right: -20px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	#showcase {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(4, 1fr);
+	}
+}
+
+@media screen and (max-width: 576px) {
+	#showcase {
+		grid-template-columns: minmax(auto, 75%);
+		justify-content: center;
+		row-gap: 50px;
+		grid-auto-rows: auto;
+	}
+
+}
